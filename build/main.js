@@ -1,0 +1,1 @@
+$(function(){$("select").on("change",function(){$.ajax({method:"GET",url:"http://api.nytimes.com/svc/topstories/v1/world.json?api-key=79cdc4c15ba80dc0b637d0b5c9ca165f:2:75124069"}).done(function(o){console.log(o),console.log(o.results),$.each(o.results,function(o,c){console.log(c["abstract"]),console.log(c.url),console.log(c.title)})})})});

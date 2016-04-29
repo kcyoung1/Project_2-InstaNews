@@ -1,27 +1,27 @@
 /* ***fonts*** */
 @font-face {
-  font-family: 'open sans';
+  font-family: 'opensans';
   src: url("fonts/opensans/opensans-bold-webfont.eot");
-  src: url("fonts/opensans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/opensans-bold-webfont.woff2") format("woff2"), url("fonts/opensans/opensans-bold-webfont.woff") format("woff"), url("fonts/opensans/opensans-bold-webfont.ttf") format("truetype"), url("fonts/opensans/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  src: url("fonts/opensans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/opensans-bold-webfont.woff2") format("woff2"), url("  fonts/opensans/opensans-bold-webfont.woff") format("woff"), url("  fonts/opensans/opensans-bold-webfont.ttf") format("truetype"), url("  fonts/opensans/opensans-bold-webfont.svg#open_sansbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'open sans';
+  font-family: 'opensans';
   src: url("fonts/opensans/opensans-bolditalic-webfont.eot");
-  src: url("fonts/opensans/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/opensans-bolditalic-webfont.woff2") format("woff2"), url("fonts/opensans/opensans-bolditalic-webfont.woff") format("woff"), url("fonts/opensans/opensans-bolditalic-webfont.ttf") format("truetype"), url("fonts/opensans/opensans-bolditalic-webfont.svg#open_sansbold_italic") format("svg");
+  src: url("fonts/opensans/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url(" fonts/opensans/opensans-bolditalic-webfont.woff2") format("woff2"), url("fonts/opensans/opensans-bolditalic-webfont.woff") format("woff"), url("fonts/opensans/opensans-bolditalic-webfont.ttf") format("truetype"), url("  fonts/opensans/opensans-bolditalic-webfont.svg#open_sansbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
-  font-family: 'open sans';
+  font-family: 'opensans';
   src: url("fonts/opensans/opensans-light-webfont.eot");
   src: url("fonts/opensans/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/opensans-light-webfont.woff2") format("woff2"), url("fonts/opensans/opensans-light-webfont.woff") format("woff"), url("fonts/opensans/opensans-light-webfont.ttf") format("truetype"), url("fonts/opensans/opensans-light-webfont.svg#open_sanslight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'open sans';
+  font-family: 'opensans';
   src: url("fonts/opensans/opensans-lightitalic-webfont.eot");
   src: url("fonts/opensans/opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/opensans-lightitalic-webfont.woff2") format("woff2"), url("fonts/opensans/opensans-lightitalic-webfont.woff") format("woff"), url("fonts/opensans/opensans-lightitalic-webfont.ttf") format("truetype"), url("fonts/opensans/opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
   font-weight: normal;
@@ -46,15 +46,15 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: 'open sans';
+  font-family: 'opensans';
   font-weight: normal;
   font-style: normal;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
   padding: 0; }
 
 .site-head p {
-  padding: 20px 0 20px 0; }
+  padding: 20px 0; }
 
 img {
   height: auto;
@@ -71,7 +71,7 @@ select {
 
 .newsarticles li {
   list-style: none;
-  background: url(build/images/doge.jpg) no-repeat center center;
+  background: url(" images/doge.jpg") no-repeat center center;
   height: 420px;
   width: 100%; }
 
@@ -87,10 +87,10 @@ select {
   height: 15vh;
   text-align: center;
   color: #c2c2c2;
-  font-family: 'open sans';
+  font-family: 'opensans';
   font-weight: normal;
   font-style: normal;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: 0; }
 
 @media only screen and (min-width: 600px) {
@@ -98,7 +98,7 @@ select {
   .site-head {
     flex-direction: row;
     text-align: left;
-    font-size: .9rem; }
+    font-size: 0.9rem; }
   .dropdown {
     padding-left: 10px; } }
 
