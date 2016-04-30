@@ -27,6 +27,12 @@
   font-weight: normal;
   font-style: italic; }
 
+.font, .head-large, .newsarticles a {
+  font-family: 'opensans';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px; }
+
 /* ***Overall*** */
 body {
   background-color: #000000;
@@ -46,9 +52,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: 'opensans';
-  font-weight: normal;
-  font-style: normal;
   font-size: 0.8rem;
   text-align: center;
   padding: 0; }
@@ -84,13 +87,27 @@ select {
 .newsarticles {
   padding: 0; }
 
+.allart {
+  height: 420px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-position: center center;
+  background-size: cover; }
+
 .text {
-  height: 400px;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem; }
 
 .newsarticles a {
   text-decoration: none;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.5rem; }
 
 /* ***footer*** */
 .allcaps {

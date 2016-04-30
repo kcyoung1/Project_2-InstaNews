@@ -5,9 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'opensans';
-    font-weight: normal;
-    font-style: normal;
+    @extend .font;
     font-size: 0.8rem;
     text-align: center;
     padding: 0;

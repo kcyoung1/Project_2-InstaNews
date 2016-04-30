@@ -33,7 +33,7 @@ $(function() {
 
                 nytData.forEach(function(item, index) {
                     // console.log(item, index);
-                    $('.newsarticles').append('<div class="article-' + index + '"><div class="text"><a href="' + item.url + '"> ' + item.abstract + '</a></div></div>');
+                    $('.newsarticles').append('<div class="allart article-' + index + '"><div class="text"><a href="' + item.url + '"> ' + item.abstract + '</a></div></div>');
 
                     img = item.multimedia[4];
                     $('.article-' + index).css('background-image', 'url("' + img.url + '")');
