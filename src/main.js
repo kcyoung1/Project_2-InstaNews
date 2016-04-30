@@ -24,15 +24,19 @@ $(function() {
                 url: 'http://api.nytimes.com/svc/topstories/v1/world.json?api-key=79cdc4c15ba80dc0b637d0b5c9ca165f:2:75124069',
             })
             .done(function(data) {
-                console.log(data);
-                console.log(data.results);
-                // var nytData = data.results,
-                $.each(data.results, function(key, value) {
-                    // value.abstract
-                    console.log(value.abstract);
-                    console.log(value.url);
-                    console.log(value.title);
+                // console.log(data);
+                // console.log(data.results);
+                var nytData = data.results;
+                nytData = nytData.filter(function(item) {
+                    return item.multimedia.length;
+                }).splice(0, 12);
 
+                nytData.forEach(function(item, index) {
+                    console.log(item, index);
+                    //     console.log(value.abstract);
+                    //     console.log(value.url);
+                    //     console.log(value.title);
+                    //
                 });
             });
     });
