@@ -69,10 +69,10 @@ select {
     padding: 0;
     display: none;
 }
-.newsarticles li {
-    list-style: none;
+.article {
+    // list-style: none;
     // background: url(" images/doge.jpg") no-repeat center center;
-    height: 420px;
+    height: auto;
     width: 100%;
 }
 .newsarticles a {

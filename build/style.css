@@ -69,9 +69,8 @@ select {
   padding: 0;
   display: none; }
 
-.newsarticles li {
-  list-style: none;
-  height: 420px;
+.article {
+  height: auto;
   width: 100%; }
 
 .newsarticles a {

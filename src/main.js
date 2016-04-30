@@ -32,7 +32,11 @@ $(function() {
                 }).splice(0, 12);
 
                 nytData.forEach(function(item, index) {
-                    console.log(item, index);
+                    // console.log(item, index);
+                    $('.newsarticles').append('<div class="article-' + index + '"><div class="text"><a href="' + item.url + '"> ' + item.abstract + '</a></div></div>');
+
+                    img = item.multimedia[4];
+                    $('.article-' + index).css('background-image', 'url("' + img.url + '")');
                     //     console.log(value.abstract);
                     //     console.log(value.url);
                     //     console.log(value.title);
