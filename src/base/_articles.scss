@@ -1,11 +1,10 @@
 /* ***News Articles*** */
-.newsarticles ul {
+.newsarticles {
     padding: 0;
-    display: none;
 }
-.article {
-    background: url(" images/doge.jpg") no-repeat center center;
-    height: auto;
+.text {
+    // background: url("images/doge.jpg") no-repeat center center;
+    height: 400px;
     width: 100%;
 }
 .newsarticles a {

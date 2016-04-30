@@ -37,7 +37,7 @@ $(function() {
 
                     img = item.multimedia[4];
                     $('.article-' + index).css('background-image', 'url("' + img.url + '")');
-                    //     console.log(value.abstract);
+                    // console.log(value.abstract);
                     //     console.log(value.url);
                     //     console.log(value.title);
                     //

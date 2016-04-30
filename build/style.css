@@ -40,7 +40,7 @@ body {
   width: 100%; }
 
 /* ***header*** */
-.site-head {
+.head-large {
   height: 85vh;
   display: flex;
   align-items: center;
@@ -53,7 +53,7 @@ body {
   text-align: center;
   padding: 0; }
 
-.site-head p {
+.head-large p {
   padding: 20px 0; }
 
 img {
@@ -64,13 +64,28 @@ select {
   font-size: 3rem;
   width: 100px; }
 
-/* ***News Articles*** */
-.newsarticles ul {
-  padding: 0;
-  display: none; }
+@media only screen and (min-width: 600px) {
+  .head-large {
+    flex-direction: row;
+    text-align: left;
+    font-size: 0.9rem; }
+  .dropdown {
+    padding-left: 10px; } }
 
-.article {
-  height: auto;
+@media only screen and (min-width: 1000px) {
+  .head-large {
+    justify-content: flex-start;
+    font-size: 1rem;
+    padding-left: 30px; }
+  .dropdown {
+    padding-left: 80px; } }
+
+/* ***News Articles*** */
+.newsarticles {
+  padding: 0; }
+
+.text {
+  height: 400px;
   width: 100%; }
 
 .newsarticles a {
@@ -91,22 +106,7 @@ select {
   font-size: 0.9rem;
   padding: 0; }
 
-@media only screen and (min-width: 600px) {
-  /* ***header*** */
-  .site-head {
-    flex-direction: row;
-    text-align: left;
-    font-size: 0.9rem; }
-  .dropdown {
-    padding-left: 10px; } }
-
 @media only screen and (min-width: 1000px) {
-  .site-head {
-    justify-content: flex-start;
-    font-size: 1rem;
-    padding-left: 30px; }
-  .dropdown {
-    padding-left: 80px; }
   .site-foot {
     display: flex;
     justify-content: flex-start;

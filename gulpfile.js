@@ -20,8 +20,10 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src('./src/*.scss')
-        .pipe(sass().on('error', sass.logError))
+    return gulp.src('./src/**/*.scss')
+        .pipe(sass({
+            includePaths: ['./base']
+        }).on('error', sass.logError))
         .pipe(gulp.dest('./build'));
 });
 
