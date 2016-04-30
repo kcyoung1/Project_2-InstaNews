@@ -1,0 +1,21 @@
+/* ***footer*** */
+.allcaps {
+    text-transform: uppercase;
+}
+.site-foot {
+    height: 15vh;
+    text-align: center;
+    color: #c2c2c2;
+    font-family: 'opensans';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.9rem;
+    padding: 0;
+}
+@media only screen and (min-width: 1000px) {
+    .site-foot {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+    }
+}
