@@ -1,9 +1,9 @@
 /* ***header*** */
+.head-small {}
 .head-large {
     height: 85vh;
-    display: flex;
+    @extend .center;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     @extend .font;
     font-size: 0.8rem;

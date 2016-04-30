@@ -1,13 +1,19 @@
 /* ***News Articles*** */
 .newsarticles {
     padding: 0;
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+        text-align: left;
+        @extend .font;
+        line-height: 1.5rem;
+    }
 }
 .allart {
     // background: url("images/doge.jpg") no-repeat center center;
     height: 420px;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    @extend .center;
     align-items: flex-end;
     background-position: center center;
     background-size: cover;
@@ -15,15 +21,7 @@
 .text {
     // height: auto;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    background: rgba(0,0,0,.6);
+    @extend .center;
+    background: rgba(0,0,0,.65);
     padding: 0.5rem;
-}
-.newsarticles a {
-    text-decoration: none;
-    color: #FFFFFF;
-    text-align: left;
-    @extend .font;
-    line-height: 1.5rem;
 }
