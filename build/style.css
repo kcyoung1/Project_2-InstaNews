@@ -27,13 +27,13 @@
   font-weight: normal;
   font-style: italic; }
 
-.font, .head-large, .newsarticles a {
+.font, .head-large, .news-articles a {
   font-family: 'opensans';
   font-weight: normal;
   font-style: normal;
   font-size: 16px; }
 
-.center, .head-large, .allart, .text {
+.center, .head-large, .all-articles, .text {
   display: flex;
   justify-content: center; }
 
@@ -86,17 +86,16 @@ select {
     padding-left: 80px; } }
 
 /* ***News Articles*** */
-.newsarticles {
+.news-articles {
   padding: 0;
   margin-bottom: 30px; }
-  .newsarticles a {
+  .news-articles a {
     text-decoration: none;
     color: #FFFFFF;
     text-align: left;
     line-height: 1.5rem; }
 
-.allart {
-  background: url("images/doge.jpg") no-repeat center center;
+.all-articles {
   height: 420px;
   width: 100%;
   align-items: flex-end;
@@ -109,15 +108,20 @@ select {
   padding: 0.5rem; }
 
 @media all and (min-width: 600px) {
-  .newsarticles {
+  .news-articles {
     display: flex;
     justify-content: space-around;
     width: 100%;
     flex-wrap: wrap;
     margin: 0 auto; }
-  .article {
+  .all-articles {
     flex: 0 1 33.33%;
     max-width: 33.33%; } }
+
+@media all and (min-width: 1000px) {
+  .all-articles {
+    flex: 0 1 25%;
+    max-width: 25%; } }
 
 /* ***footer*** */
 .allcaps {
