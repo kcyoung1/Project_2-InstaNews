@@ -1,3 +1,13 @@
+// Loading gif
+.loader-gif {
+    display: flex;
+    justify-content: center;
+}
+.loading {
+    display: none;
+    height: 50px;
+    margin: 0 auto;
+}
 /* ***News Articles*** */
 .news-articles {
     padding: 0;

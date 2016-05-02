@@ -18,7 +18,7 @@
 $(function() {
     $('select').on('change', function() {
         // $('header').switchClass();
-        // $('.loading').show();
+        $('.loading').show();
         var selection = $('.selectopt').val();
         $.ajax({
                 method: 'GET',
@@ -39,6 +39,8 @@ $(function() {
                     $('.article-' + index).css('background-image', 'url("' + img.url + '")');
 
                 });
+            }).always(function() {
+                $('.loading').hide();
             });
     });
 });

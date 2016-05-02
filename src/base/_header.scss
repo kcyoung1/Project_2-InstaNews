@@ -1,19 +1,27 @@
 /* ***header*** */
-.head-small {}
+.head-small {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 35vh;
+    padding: 0;
+    font-size: 0.8rem;
+}
 .head-large {
     height: 85vh;
-    @extend .center;
     align-items: center;
     flex-direction: column;
-    @extend .font;
     font-size: 0.8rem;
     text-align: center;
     padding: 0;
+    transition: all 0.5s 0.5s ease-out;
 }
 .head-large p {
     padding: 20px 0;
 }
-.logo-small {}
+.logo-small {
+    height: 150px;
+}
 .logo-large {
     height: auto;
     max-width: 100%;

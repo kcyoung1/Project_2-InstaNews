@@ -9,4 +9,6 @@ body {
     margin: 0 auto;
     padding: 0 2rem;
     width: 100%;
+    @extend .font;
+    @extend .center;
 }
