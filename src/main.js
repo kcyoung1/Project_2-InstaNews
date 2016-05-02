@@ -19,9 +19,10 @@ $(function() {
     $('select').on('change', function() {
         // $('header').switchClass();
         // $('.loading').show();
+        var selection = $('.selectopt').val();
         $.ajax({
                 method: 'GET',
-                url: 'http://api.nytimes.com/svc/topstories/v1/world.json?api-key=79cdc4c15ba80dc0b637d0b5c9ca165f:2:75124069',
+                url: 'http://api.nytimes.com/svc/topstories/v1/' + selection + '.json?api-key=79cdc4c15ba80dc0b637d0b5c9ca165f:2:75124069',
             })
             .done(function(data) {
 
