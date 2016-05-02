@@ -11,9 +11,10 @@
     font-style: normal;
     font-size: 0.9rem;
     padding: 0;
-}
-@media only screen and (min-width: 1000px) {
-    .site-foot {
+    @include tablet {
+        padding-top: 30px;
+    }
+    @include desktop {
         display: flex;
         justify-content: flex-start;
         padding-left: 30px;

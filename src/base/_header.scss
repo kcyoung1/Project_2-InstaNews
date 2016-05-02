@@ -22,6 +22,16 @@
     p {
         padding: 15px 0;
     }
+    @include tablet {
+        flex-direction: row;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    @include desktop {
+        justify-content: flex-start;
+        font-size: 1rem;
+        padding-left: 30px;
+    }
 }
 .logocontainer {
     transition: all 0.5 0.5 ease-out;
@@ -38,23 +48,11 @@ select {
     font-size: 1rem;
     width: 100px;
 }
-@media only screen and (min-width: 600px) {
-    .head-large {
-        flex-direction: row;
-        text-align: left;
-        font-size: 0.9rem;
-    }
-    .dropdown {
+.dropdown {
+    @include tablet {
         padding-left: 10px;
     }
-}
-@media only screen and (min-width: 1000px) {
-    .head-large {
-        justify-content: flex-start;
-        font-size: 1rem;
-        padding-left: 30px;
-    }
-    .dropdown {
+    @include desktop {
         padding-left: 80px;
     }
 }
