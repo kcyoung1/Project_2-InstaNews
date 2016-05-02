@@ -1,6 +1,7 @@
 $(function() {
     $('select').on('change', function() {
 
+
         event.preventDefault();
         $('header').switchClass("head-large", "head-small", 1000, "easeOutQuad");
         $('img').switchClass("logo-large", "logo-small", 1000, "easeOutQuad");
