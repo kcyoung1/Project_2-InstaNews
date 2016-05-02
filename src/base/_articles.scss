@@ -21,7 +21,6 @@
     }
 }
 .all-articles {
-    // background: url("images/doge.jpg") no-repeat center center;
     height: 420px;
     width: 100%;
     @extend .center;
@@ -30,7 +29,6 @@
     background-size: cover;
 }
 .text {
-    // height: auto;
     width: 100%;
     @extend .center;
     background: rgba(0,0,0,.65);
