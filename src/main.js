@@ -34,10 +34,17 @@ $(function() {
 
                     });
                 }
-
             }).always(function() {
                 $('.loading').hide();
             });
 
+    });
+});
+
+$(function() {
+    $('.news-articles').hover(function() {
+        $('a').slideDown("slow");
+    }, function() {
+        $('a').slideUp("slow");
     });
 });

@@ -19,6 +19,19 @@
         @extend .font;
         line-height: 1.5rem;
     }
+    p {
+        font-size: 0.8rem;
+        font-family: 'opensans';
+        font-style: italic;
+        font-weight: normal;
+        text-align: center;
+        @include tablet {
+            font-size: 0.9rem;
+        }
+        @include desktop {
+            font-size: 1rem;
+        }
+    }
     @include tablet {
         display: flex;
         justify-content: space-around;
@@ -48,4 +61,7 @@
     @extend .center;
     background: rgba(0,0,0,.65);
     padding: 0.5rem;
+}
+a {
+    display: none;
 }
