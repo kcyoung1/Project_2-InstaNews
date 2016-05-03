@@ -6,9 +6,7 @@
     height: 15vh;
     text-align: center;
     color: #c2c2c2;
-    font-family: 'opensans';
-    font-weight: normal;
-    font-style: normal;
+    @extend .font;
     font-size: 0.9rem;
     padding: 0;
     @include tablet {

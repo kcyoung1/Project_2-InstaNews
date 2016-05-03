@@ -43,8 +43,6 @@ $(function() {
 
 $(function() {
     $('.news-articles').hover(function() {
-        $('a').slideDown("slow");
-    }, function() {
-        $('a').slideUp("slow");
+        $('.text', this).slideToggle('slow', function() {});
     });
 });
