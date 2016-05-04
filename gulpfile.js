@@ -2,8 +2,9 @@ var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
+var babel = require('gulp-babel');
 
-gulp.task('default', ['uglify', 'browser-sync']);
+gulp.task('default', ['es2015', 'sass', 'browser-sync']);
 
 gulp.task('browser-sync', function() {
     browserSync.init({
@@ -12,7 +13,7 @@ gulp.task('browser-sync', function() {
     });
 
     // Watch Tasks
-    gulp.watch('./src/**/*.js', ['uglify']);
+    gulp.watch('./src/**/*.js', ['es2015']);
     gulp.watch('./src/**/*.scss', ['sass']);
 
     gulp.watch(['./build/**/*.*', 'index.html'])
@@ -31,4 +32,12 @@ gulp.task('uglify', function() {
     gulp.src('./src/*.js') // What files do we want gulp to consume?
         .pipe(uglify()) // Call the uglify function on these files
         .pipe(gulp.dest('./build')); // Where do we put the result?
+});
+
+gulp.task('es2015', () => {
+    return gulp.src('./src/**/*.js')
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(gulp.dest('./build'));
 });
