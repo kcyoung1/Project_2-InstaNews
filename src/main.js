@@ -10,7 +10,7 @@ $(function() {
         $('.news-articles').empty();
         $('.loading').show();
 
-        var selection = $('.selectopt').val();
+        var selection = $('.select-opt').val();
 
         $.ajax({
                 method: 'GET',
