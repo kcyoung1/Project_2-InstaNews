@@ -3,12 +3,12 @@ var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 
-gulp.task('default', ['uglify', 'browser-sync']);
+gulp.task('default', ['uglify','sass', 'browser-sync']);
 
 gulp.task('browser-sync', function() {
     browserSync.init({
         open: false,
-        proxy: '192.168.33.10/project2'
+        proxy: '192.168.33.10/forks/kurtis/kurtisinstanews'
     });
 
     // Watch Tasks
@@ -30,5 +30,5 @@ gulp.task('sass', function() {
 gulp.task('uglify', function() {
     gulp.src('./src/*.js') // What files do we want gulp to consume?
         .pipe(uglify()) // Call the uglify function on these files
-        .pipe(gulp.dest('./build')); // Where do we put the result?
+        .pipe(gulp.dest('./build')) // Where do we put the result?
 });
