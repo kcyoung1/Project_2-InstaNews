@@ -14,7 +14,5 @@
 </ul>
 
 <h2>What did I learn?</h2>
-<p>During this project, I learned how to incorporate ajax into my website to pull information from an API. It was difficult to wrap my head around how to access specific information from a JSON object but it solidified my understanding of objects and arrays and I look forward to working with API's in the future. 
-  
-  The addition of gulp and browsersync in this project made life much easier as we didn't have to manually refresh our pages. Learning how to code CSS using SASS also saved a great deal of time. 
-</p>
+<p>During this project, I learned how to incorporate ajax into my website to pull information from an API. It was difficult to wrap my head around how to access specific information from a JSON object but it solidified my understanding of objects and arrays and I look forward to working with API's in the future. </p>
+<p>The addition of gulp and browsersync in this project made life much easier as we didn't have to manually refresh our pages. Learning how to code CSS using SASS also saved a great deal of time.</p>
