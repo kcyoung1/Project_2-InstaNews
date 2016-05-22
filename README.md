@@ -9,7 +9,6 @@
 <li>JavaScript</li>
 <li>jQuery</li>
 <li>Ajax</li>
-<li></li>
 <li>Git/Github</li>
 </ul>
 
