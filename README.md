@@ -8,7 +8,7 @@
 <li>CSS/SASS (animations)</li>
 <li>JavaScript</li>
 <li>jQuery</li>
-<li>Ajax</li>
+<li>Ajax/JSON</li>
 <li>Git/Github</li>
 </ul>
 
