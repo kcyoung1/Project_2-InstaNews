@@ -10,6 +10,7 @@
 <li>jQuery</li>
 <li>Ajax/JSON</li>
 <li>Git/Github</li>
+<li>Vagrant</li>
 </ul>
 
 <h2>What did I learn?</h2>
