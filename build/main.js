@@ -26,20 +26,19 @@ $(function () {
                 var nytData = data.results.filter(function (item) {
                     return item.multimedia.length;
                 }).splice(0, 12).forEach(function (item, index) {
-                    $('.news-articles').append('\n                          <a href="' + item.url + '">\n                            <div class="all-articles article-' + index + '">\n                              <div class="text">\n                                <a href="' + item.url + '"> ' + item.abstract + ' </a>\n                              </div>\n                            </div>\n                          </a>');
+                    $('.news-articles').append('\n                          <a href="' + item.url + '">\n                            <div class="all-articles article-' + index + '">\n                              <div class="text-' + index + '">\n                                <a href="' + item.url + '" class="text"> ' + item.abstract + ' </a>\n                              </div>\n                            </div>\n                          </a>');
 
                     var img = item.multimedia[4];
                     $('.article-' + index).css('background-image', 'url("' + img.url + '")');
+
+                    $('.text-' + index).hide();
+                    $('.article-' + index).hover(function () {
+                        $('.text-' + index).slideToggle('slow', function () {});
+                    });
                 });
             }
         }).always(function () {
             $('.loading').hide();
         });
-    });
-});
-
-$(function () {
-    $('.news-articles').hover(function () {
-        $('.text', this).slideToggle('slow', function () {});
     });
 });

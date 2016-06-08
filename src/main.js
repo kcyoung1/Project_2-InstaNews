@@ -29,8 +29,8 @@ $(function() {
                         $('.news-articles').append(`
                           <a href="${item.url}">
                             <div class="all-articles article-${index}">
-                              <div class="text">
-                                <a href="${item.url}"> ${item.abstract} </a>
+                              <div class="text-${index}">
+                                <a href="${item.url}" class="text"> ${item.abstract} </a>
                               </div>
                             </div>
                           </a>`);
@@ -38,17 +38,15 @@ $(function() {
                         let img = item.multimedia[4];
                         $('.article-' + index).css('background-image', `url("${img.url}")`);
 
+                        $('.text-'+index).hide();
+                        $('.article-'+index).hover(function() {
+                            $('.text-'+index).slideToggle('slow', function() {});
                     });
+                  });
                 }
             }).always(function() {
                 $('.loading').hide();
             });
 
-    });
-});
-
-$(function() {
-    $('.news-articles').hover(function() {
-        $('.text', this).slideToggle('slow', function() {});
     });
 });
