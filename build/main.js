@@ -1,6 +1,8 @@
 'use strict';
 
 $(function () {
+    $('#my-select').selectBoxIt();
+
     $('select').on('change', function () {
         event.preventDefault();
 

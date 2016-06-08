@@ -14,14 +14,14 @@ gulp.task('browser-sync', function() {
 
     // Watch Tasks
     gulp.watch('./src/**/*.js', ['es2015']);
-    gulp.watch('./src/**/*.scss', ['sass']);
+    gulp.watch('./src/styles/**/*.scss', ['sass']);
 
     gulp.watch(['./build/**/*.*', 'index.html'])
         .on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
-    return gulp.src('./src/**/*.scss')
+    return gulp.src('./src/styles/**/*.scss')
         .pipe(sass({
             outputStyle: 'compressed'
         }).on('error', sass.logError))
