@@ -12,7 +12,7 @@ $(function () {
         $('.news-articles').empty();
         $('.loading').show();
 
-        var selection = $('.selectopt').val();
+        var selection = $('.select-opt').val();
 
         $.ajax({
             method: 'GET',
@@ -24,7 +24,7 @@ $(function () {
                 var nytData = data.results.filter(function (item) {
                     return item.multimedia.length;
                 }).splice(0, 12).forEach(function (item, index) {
-                    $('.news-articles').append('\n                          <div class="all-articles article-' + index + '">\n                            <div class="text"><a href="' + item.url + '"> ' + item.abstract + ' </a></div>\n                          </div>');
+                    $('.news-articles').append('\n                          <a href="' + item.url + '">\n                            <div class="all-articles article-' + index + '">\n                              <div class="text">\n                                <a href="' + item.url + '"> ' + item.abstract + ' </a>\n                              </div>\n                            </div>\n                          </a>');
 
                     var img = item.multimedia[4];
                     $('.article-' + index).css('background-image', 'url("' + img.url + '")');

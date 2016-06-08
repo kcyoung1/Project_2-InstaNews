@@ -10,7 +10,7 @@ $(function() {
         $('.news-articles').empty();
         $('.loading').show();
 
-        let selection = $('.selectopt').val();
+        let selection = $('.select-opt').val();
 
         $.ajax({
                 method: 'GET',
@@ -25,9 +25,13 @@ $(function() {
                     }).splice(0, 12)
                     .forEach(function(item, index) {
                         $('.news-articles').append(`
-                          <div class="all-articles article-${index}">
-                            <div class="text"><a href="${item.url}"> ${item.abstract} </a></div>
-                          </div>`);
+                          <a href="${item.url}">
+                            <div class="all-articles article-${index}">
+                              <div class="text">
+                                <a href="${item.url}"> ${item.abstract} </a>
+                              </div>
+                            </div>
+                          </a>`);
 
                         let img = item.multimedia[4];
                         $('.article-' + index).css('background-image', `url("${img.url}")`);
